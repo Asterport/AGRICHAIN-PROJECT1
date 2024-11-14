@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Management</title>
+    <link rel="stylesheet" href="addagriproduce.css">
+    <!-- <script src="homepage2.js"></script> -->
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <img src="DALL·E 2024-11-13 16.32.03 - A highly realistic image of Indian farmers working in the agricultural supply chain. Depict farmers in traditional attire harvesting crops, like wheat.webp" alt="Agricultural Supply Chain">
+        <div class="hero-text">
+            <h1>AGRICHAIN - THE ONE SOLUTION</h1>
+            <p>From Farm to Market - Ensuring Traceability, Reducing Wastage, and Improving Logistics</p>
+        </div>
+    </header>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <ul class="navbar-links">
+            <li><a href="homepage2.html">Home</a></li>
+            <li><a href="#product-categories">Product Categories</a></li>
+            <li><a href="#add-agri-produce">Add Agri Produce</a></li>
+            <li><a href="#mandi-bhav">Mandi Bhav</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <!-- Sidebar Section -->
+      
+        <!-- Crop Details Form Section -->
+        <section class="form-section">
+            <h2>Add Crop Details</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="cropName">Crop Name *</label>
+                    <input type="text" id="cropName" name="cropName" required>
+                </div>
+                <div class="form-group">
+                    <label for="cropVariety">Crop Variety *</label>
+                    <input type="text" id="cropVariety" name="cropVariety" required>
+                </div>
+                <div class="form-group">
+                    <label for="cropType">Crop Type *</label>
+                    <select id="cropType" name="cropType" required>
+                        <option value="vegetable">Vegetable</option>
+                        <option value="fruit">Fruit</option>
+                        <option value="grain">Grain</option>
+                        <option value="spice">Spice</option>
+                        <option value="herb">Herb</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity Available (kg) *</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price per Unit *</label>
+                    <input type="number" id="price" name="price" required>
+                </div>
+                <div class="form-group">
+                    <label for="harvestDate">Harvest Date *</label>
+                    <input type="date" id="harvestDate" name="harvestDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="storage">Storage Method</label>
+                    <textarea id="storage" name="storage" placeholder="Describe how the crop is stored"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="images">Upload Crop Image</label>
+                    <input type="file" id="images" name="images">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
