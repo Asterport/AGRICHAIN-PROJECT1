@@ -22,7 +22,7 @@ body, html {
 
 .hero img {
     width: 100%;
-    height: 100%;
+    height:100%;
     object-fit: cover;
     object-position: center;
     display: flex;
@@ -75,7 +75,7 @@ body, html {
     font-size: 1.2rem;
 }
 
-/* Navbar Styling */
+/* General Navbar Styles */
 .navbar {
     position: sticky;
     top: 0;
@@ -87,6 +87,8 @@ body, html {
     padding: 1rem 2rem;
     color: white;
     z-index: 1000;
+    margin: 0; /* Ensures no margin pushes navbar */
+    box-sizing: border-box; /* Consistent padding across pages */
 }
 
 .navbar-logo {
@@ -98,6 +100,8 @@ body, html {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    margin: 0; /* Removes any default list margin */
+    padding: 0; /* Ensures no padding pushes navbar */
 }
 
 .navbar-links li a {
