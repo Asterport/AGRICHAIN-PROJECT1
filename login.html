@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supply Chain Management</title>
     <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
 </head>
 <body>
 
@@ -45,10 +46,22 @@
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required>
                 </div>
+                <div class="input-group">
+                    <label for="role">Role</label>
+                    <select id="role" required>
+                        <option value="farmer">Farmer</option>
+                        <option value="retailer">Retailer</option>
+                        <option value="trader">Trader</option>
+                    </select>
+                </div>
                 <div class="form-actions">
                     <button type="submit" class="login-button">Login</button>
                     <a href="registration.html" class="register-link">Don't have an account? Register here</a>
+
                 </div>
+                <div class="error-message" id="error-message"></div>
+            </div>
+        
             </form>
         </div>
     </div>

@@ -188,3 +188,50 @@ body, html {
 .register-link:hover {
     text-decoration: underline;
 }
+/* Style for the form input group */
+.input-group {
+    margin-bottom: 20px; /* Space between input groups */
+    width: 100%; /* Ensure it takes the full width of the form */
+}
+
+/* Label for the input field */
+.input-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px; /* Space between label and input field */
+}
+
+/* Styling the role dropdown */
+#role {
+    width: 100%; /* Make it full width */
+    padding: 12px; /* Padding inside the select */
+    font-size: 1rem; /* Font size */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* Background color */
+    color: #333; /* Text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add hover and focus effects for the dropdown */
+#role:hover, #role:focus {
+    border-color: #27ae60; /* Change border color on hover/focus */
+    outline: none; /* Remove the default outline */
+}
+
+/* Optional: Style for disabled state */
+#role:disabled {
+    background-color: #f0f0f0; /* Light gray for disabled */
+    cursor: not-allowed;
+    border-color: #ddd;
+}
+
+/* Error message styling (if you have one) */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
