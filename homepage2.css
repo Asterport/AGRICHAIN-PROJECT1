@@ -139,6 +139,9 @@ body, html {
     padding: 20px;
     overflow-y: auto; /* Makes sidebar scrollable */
     height: 100vh;
+    position: absolute;
+    right: 0;
+    /* top: 0; */
 }
 
 .sidebar h2 {
@@ -166,6 +169,7 @@ body, html {
 .content {
     flex: 1;
     padding: 20px;
+    margin-right: 250px;
 }
 
 .content h1 {
